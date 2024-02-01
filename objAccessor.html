@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=/, initial-scale=1.0">
+    <title>Js Object Accessor</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const person ={
+            fName : "faisal",
+            lName : "Masum",
+            age : 21,
+            get Fullname() {
+                return this.fName + " " + this.lName 
+            }
+        }
+        document.getElementById("demo").innerHTML = person.Fullname
+    </script>
+</body>
+</html>

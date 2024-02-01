@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comperison practice</title>
+</head>
+<body>
+    <input id="age" value="18">
+    <button onclick="myFunction()" >Cheak</button>
+     <p id="demo"></p>
+     <script>
+         function myFunction(){
+             let vote ;
+             let age = Number(document.getElementById("age").value);
+             if(isNaN(age)){
+                vote = "Input is Not a Number"
+             }
+                else{
+                 vote = (age => 18) ? "Too Older" : "Too young"
+                }
+             
+             document.getElementById("demo").innerHTML = vote
+         }
+     </script>
+</body>
+</html>

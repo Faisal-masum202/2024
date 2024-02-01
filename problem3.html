@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem solving</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <script>
+        function logestString(names){
+            const longestWord = ""
+            for(name of names){
+                if(name.length > names.length){
+                    longestWord = name;
+                }
+            }
+            return [longestWord, names.indexOf(longestWord)]
+        }
+        document.getElementById("demo").innerHTML = logestString(["Masum", "Faisal Hossain Masum", "Hossain", "Billah"])
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem solving 2</title>
+</head>
+<body>
+    <p id ="demo"></p>
+
+    <script>
+        const masum = "Do you about Faisal.faisal is a good boy.Faisal loves his mother more"
+        const hossain = masum.match(/faisals/ig);
+        const noor = hossain ? hossain.length : "not found"
+        const position = masum.search(/faisals/i)
+        const count = position >= 0 ? position : "sorry"
+        document.getElementById("demo").innerHTML = noor
+
+    
+    </script>
+</body>
+</html>
